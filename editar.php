@@ -13,11 +13,11 @@
 	</div>
 	<div class="mb-3">
 		<label for="cpf" class="form-label">CPF</label>
-		<input type="number" name="cpf" class="form-control"  value='<?php print $row->cpf; ?>'>
+		<input type="text" name="cpf" class="form-control"  value='<?php print $row->cpf; ?>'>
 	</div>
 	<div class="mb-3">
 		<label for="telefone" class="form-label">Telefone</label>
-		<input type="number" name="telefone" class="form-control"  value='<?php print $row->telefone; ?>'>
+		<input type="text" name="telefone" class="form-control"  value='<?php print $row->telefone; ?>'>
 	</div>
 	<div class="mb-3">
 		<label for="dt_nascimento" class="form-label">Data de Nascimento</label>
