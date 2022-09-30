@@ -35,3 +35,25 @@
 		<a href="?page=listar" class="btn btn-danger">Cancelar</a>
 	</div>	
 </form>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){ 
+		$("input[name='genero']").click(function(){
+			$("input[name='genero']").prop('checked', false);
+			$(this).prop('checked', true);
+			if($(this).val() == "M"){
+				$("input[name='genero'][value='F']").prop("cheked", false);
+			} else {
+				$("input[name='genero'][value='M']").prop("cheked", false);
+			}	
+		})
+		$('[name=telefone]').mask('(00) 0000-00009');
+		$('[name=cpf]').mask('000.000.000-00');
+		$('[name=nome]').mask('A', {
+			translation: {
+				'A': {pattern: /[A-Za-zÀ-ú ]/, recursive: true}
+			}
+		});
+	});
+</script>
